@@ -266,10 +266,25 @@ a:hover, .link:hover{
     color: white;
 }
 .blog-container::after{
+    /*
     content: url("../img/text-background.png");
     position: absolute;
     height: 80vh;
+    width: 100%;
     overflow: hidden;
+    */
+    content: "";
+    background-image: url("../img/text-background.png");
+    position: absolute;
+
+    min-width: 100%;
+    min-height: 800px;
+    bottom: 0;
+
+    background-repeat: no-repeat;
+    background-size: 80% 100%;
+    overflow: hidden;
+
 }
 .blog-container{
     flex-direction: column;
